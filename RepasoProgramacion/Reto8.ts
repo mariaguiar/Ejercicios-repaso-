@@ -5,8 +5,6 @@ function SumaCar(Array){
             Resultado+=Array.length[i];
             
         }
-        
-        
-    }
+    
     return Resultado;
 }
