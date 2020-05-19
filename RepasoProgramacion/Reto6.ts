@@ -2,9 +2,9 @@ function  Par(Array){
     let Resultado=false;
     
     let i=0;
-    while(i<Array.length && Resultado!=true){
+    while(i<Array.length && Resultado[i]!=true){
         if(Array[i]%2==0){
-            Resultado= true;
+            Resultado[i]= true;
         }
         
     }
