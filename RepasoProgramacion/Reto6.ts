@@ -1,10 +1,14 @@
 function  Par(Array){
     let Resultado=false;
     
-    for(let i=0;i<Array.length;i++){
+    let i=0;
+    while(i<Array.length){
         if(Array[i]%2==0){
             Resultado= true;
         }
+        
     }
+    
     return Resultado;
 }
+Par([2,3,4,5]);
