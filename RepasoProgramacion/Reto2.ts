@@ -1,20 +1,25 @@
  function Paieses(pais){
-     
+     let Resultado="";
     if(pais=="España"||pais=="Francia"||pais=="Suiza"||pais=="Alemania"){
-        return "Europa";
+        Resultado = "Europa";
+        
     }
-    if(pais=="America"||pais=="Canada"||pais=="Mexico"||pais=="Bermudas"){
-        return "America";
+    else if(pais=="America"||pais=="Canada"||pais=="Mexico"||pais=="Bermudas"){
+        Resultado="America";
+   
     }
-    if(pais=="China"||pais=="Japon"||pais=="Mongolia"||pais=="india"){
-        return "Asia";
+    else if(pais=="China"||pais=="Japon"||pais=="Mongolia"||pais=="india"){
+        Resultado= "Asia";
     }
 
-    if(pais=="Marruecos"||pais=="Congo"||pais=="Botwana"||pais=="Sudafrica"){
-        return "Africa";
+    else if (pais=="Marruecos"||pais=="Congo"||pais=="Botwana"||pais=="Sudafrica"){
+        Resultado= "Africa";
     }
-    if(pais=="Australia"||pais=="Nueva zelanda"||pais=="Samoa"||pais=="figi"){
-        return "Oceania";
+    else if(pais=="Australia"||pais=="Nueva zelanda"||pais=="Samoa"||pais=="figi"){
+        Resultado= "Oceania";
     }
-    
+    else{
+        console.log(" Ese pais no se reconoce")
+    }
+    return Resultado;
 }

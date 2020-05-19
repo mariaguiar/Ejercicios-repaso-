@@ -2,7 +2,7 @@ function  Par(Array){
     let Resultado=false;
     
     let i=0;
-    while(i<Array.length){
+    while(i<Array.length && Resultado!=true){
         if(Array[i]%2==0){
             Resultado= true;
         }
