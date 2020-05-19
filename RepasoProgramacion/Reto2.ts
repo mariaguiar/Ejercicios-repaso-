@@ -1,5 +1,5 @@
- function Paieses(pais){
-     let Resultado="";
+ function Paieses(pais:string):string{
+     let Resultado:string="";
     if(pais=="España"||pais=="Francia"||pais=="Suiza"||pais=="Alemania"){
         Resultado = "Europa";
         

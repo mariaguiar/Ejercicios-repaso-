@@ -1,10 +1,10 @@
-function  Par(Array){
-    let Resultado=false;
+function  Par(Array:number[]):boolean{
+    let Resultado:boolean=false;
     
     let i=0;
-    while(i<Array.length && Resultado[i]!=true){
+    while(i<Array.length && Resultado==false){
         if(Array[i]%2==0){
-            Resultado[i]= true;
+            Resultado = true;
         }
         
     }
