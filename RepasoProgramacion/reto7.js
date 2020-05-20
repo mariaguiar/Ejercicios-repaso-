@@ -1,9 +1,14 @@
-function nombres(array) {
-    for (var i = 0; i < array.length; i++) {
-        for (var j = 0; j < array[i].length; j++) {
-            if (array[i][0] === "M") { }
-        }
-        console.log(array[i], ": Verdadero");
-    }
+function nombres(array)
+{
+ let i = 0;
+ let m = true;
+ while (i<array.length && m)
+ {
+  if (!array[i].startsWith("M"))
+  {m = false}
+  i++;
+ }
+ return m;
 }
-nombres(["Maria", "Marta"]);
+
+console.log(nombres(["Maria", "Pepe"]));
